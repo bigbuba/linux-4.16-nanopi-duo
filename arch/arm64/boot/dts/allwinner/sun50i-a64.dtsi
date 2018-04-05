@@ -136,6 +136,17 @@
 			reg = <0x01c00000 0x1000>;
 		};
 
+		crypto: crypto@1c15000 {
+			compatible = "allwinner,sun50i-a64-crypto";
+			reg = <0x01c15000 0x1000>;
+			interrupts = <GIC_SPI 94 IRQ_TYPE_LEVEL_HIGH>;
+			interrupt-names = "ce_ns";
+			resets = <&ccu RST_BUS_CE>;
+			reset-names = "ahb";
+			clocks = <&ccu CLK_BUS_CE>, <&ccu CLK_CE>;
+			clock-names = "ahb1_ce", "mod";
+		};
+
 		dma: dma-controller@1c02000 {
 			compatible = "allwinner,sun50i-a64-dma";
 			reg = <0x01c02000 0x1000>;

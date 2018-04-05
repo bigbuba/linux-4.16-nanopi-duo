@@ -135,3 +135,7 @@
 &usbphy {
 	status = "okay";
 };
+
+&crypto {
+	compatible = "allwinner,sun8i-h3-crypto";
+};

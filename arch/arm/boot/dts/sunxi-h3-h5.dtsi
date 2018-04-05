@@ -144,7 +144,6 @@
 			reset-names = "ahb";
 			clocks = <&ccu CLK_BUS_CE>, <&ccu CLK_CE>;
 			clock-names = "ahb1_ce", "mod";
-			status = "disabled";
 		};
 
 		hwspinlock: hwspinlock@1c18000 {
