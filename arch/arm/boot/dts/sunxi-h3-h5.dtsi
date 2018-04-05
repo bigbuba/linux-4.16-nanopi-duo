@@ -129,6 +129,12 @@
 			reg = <0x01c00000 0x1000>;
 		};
 
+		sid: eeprom@01c14200 {
+			/* compatible is in per SoC .dtsi file */
+                        reg = <0x01c14200 0x200>;
+                        status = "disabled";
+                };
+
 		dma: dma-controller@1c02000 {
 			compatible = "allwinner,sun8i-h3-dma";
 			reg = <0x01c02000 0x1000>;
