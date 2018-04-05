@@ -339,3 +339,7 @@
 &sid {
 	status = "okay";
 };
+
+&hwspinlock {
+	status = "okay";
+};
