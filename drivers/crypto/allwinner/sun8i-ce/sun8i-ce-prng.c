@@ -63,7 +63,7 @@ int sun8i_ce_prng_generate(struct crypto_rng *tfm, const u8 *src,
 
 rebegin:
 	len = min_t(size_t, dlen, PRNG_DATA_SIZE);
-	dev_dbg(ss->dev, "%s Rebegin %u dlen=%u steplen=%lu\n", __func__, slen, dlen, len);
+	dev_dbg(ss->dev, "%s Rebegin %u dlen=%u steplen=%u\n", __func__, slen, dlen, len);
 
 	cet->t_dst[0].addr = dma_map_single(ss->dev, data, PRNG_DATA_SIZE,
 					    DMA_FROM_DEVICE);
